@@ -33,10 +33,7 @@ void ATankPlayerController::AimTowardsCrosshair() {
 
 	FVector OutHitLocation;
 	if (GetSightRayHitLocation(OutHitLocation)) {
-		UE_LOG(LogTemp, Warning, TEXT("Hit Location: %s"), *OutHitLocation.ToString());
-
-		// If it hits the lanscape
-			// Tell the tank to aim at this point
+		GetControlledTank()->AimAt(OutHitLocation);
 	}
 }
 

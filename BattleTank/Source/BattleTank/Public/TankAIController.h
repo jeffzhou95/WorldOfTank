@@ -22,5 +22,7 @@ public:
 
 	virtual void BeginPlay() override;
 
+	virtual void Tick(float DelatSeconds) override;
+
 	ATank* GetPlayerTank() const;
 };
