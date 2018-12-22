@@ -22,4 +22,8 @@ public:
 	virtual void BeginPlay() override;
 
 	virtual void Tick(float DelatSeconds) override;
+
+private:
+	float AcceptanceRadius = 3000;
+
 };
