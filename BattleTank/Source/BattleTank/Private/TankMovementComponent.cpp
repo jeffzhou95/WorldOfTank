@@ -3,7 +3,7 @@
 #include "TankMovementComponent.h"
 #include "TankTrack.h"
 
-void UTankMovementComponent::InitializeComponent(UTankTrack* LeftTrackToSet, UTankTrack* RightTrackToSet) {
+void UTankMovementComponent::Initialize(UTankTrack* LeftTrackToSet, UTankTrack* RightTrackToSet) {
 	LeftTrack = LeftTrackToSet;
 	RightTrack = RightTrackToSet;
 }
